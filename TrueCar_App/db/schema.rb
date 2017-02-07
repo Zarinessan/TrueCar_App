@@ -13,15 +13,15 @@
 ActiveRecord::Schema.define(version: 20170207074759) do
 
   create_table "Followings", force: :cascade do |t|
-    t.string   "follower_id", null: false
-    t.string   "leader_id",   null: false
+    t.integer  "follower_id", null: false
+    t.integer  "leader_id",   null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
   create_table "Likes", force: :cascade do |t|
-    t.string   "user_id",    null: false
-    t.string   "post_id",    null: false
+    t.integer  "user_id",    null: false
+    t.integer  "post_id",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
