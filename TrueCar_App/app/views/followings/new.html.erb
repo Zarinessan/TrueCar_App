@@ -1,0 +1,16 @@
+<h1>Followings#new</h1>
+
+<%= form_for @following do |f| %>
+	<p>
+		<%= f.label :user_id %><br />
+		<%= f.text_field :user_id %><br />
+	</p>
+	<p>
+		<%= f.label :leader_id %><br />
+		<%= f.text_field :leader_id %><br />
+	</p>
+	<p>
+		<%= f.submit "Add Following" %>
+	</p>
+
+<% end %>

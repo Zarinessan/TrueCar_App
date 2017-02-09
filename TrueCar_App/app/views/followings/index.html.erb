@@ -1,0 +1,10 @@
+<h1>Followings#index</h1>
+
+<%= link_to "New Follow", new_following_path %>
+
+<p>Here are the following relationships we found we found!</p>
+
+<% @followings.each do |following| %>
+	<p> User <%= following.user_id %> is following user <%= following.leader_id %> </p>
+	<hr>
+<% end %>
