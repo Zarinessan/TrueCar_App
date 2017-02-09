@@ -1,2 +1,21 @@
 <h1>Posts#new</h1>
 <p>Find me in app/views/posts/new.html.erb</p>
+
+<%= form_for @post do |f| %>
+	<p>
+		<%= f.label :url %><br />
+		<%= f.text_field :url %><br />
+	</p>
+	<p>
+		<%= f.label :caption %><br />
+		<%= f.text_field :caption %><br />
+	</p>
+	<p>
+		<%= f.label :user_id %><br />
+		<%= f.text_field :user_id %><br />
+	</p>
+	<p>
+		<%= f.submit "Add Post" %>
+	</p>
+
+<% end %>
