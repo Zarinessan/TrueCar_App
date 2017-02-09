@@ -1,0 +1,29 @@
+This file contains notes of things I would change and any extra information I think might be useful. 
+
+I use text wrap for notes like this to myself. 
+
+1. Not use Windows. I would have created a Linux VM and done the work from there. I did manage to get it all working on Windows it just took longer than I would have liked. Seemed like it would be a lot easier getting started on linux. I use powershell anyway so most of the interaction with the command line would be exactly the same.
+
+2. I should have asked about priority. At first I assumed I would have enough time to get the whole thing done. I underestimated how long it would take me to learn to navigate and use a new framework. Learning Ruby itself was not too difficult since I am so familiar with Python. 
+
+3. I would have watched the youtube series I linked below all the way through before attempting. I started off watching a bunch of tutorials on getting started with Rails and many of them had a much smaller scope. The series I linked is 38 videos and he explains everything such as: navigating the rails framework, nitch things to look out for (plurals), dynamically pulling info from the database and displaying it in on our webpages. 
+
+https://www.youtube.com/playlist?list=PLDmvslp_VR0xlwr5lAx2PDsZLu7oIOhpX
+
+4. 
+
+
+
+
+
+
+
+
+
+
+
+Other Materials Used: 
+
+1. Authentication Video - https://www.youtube.com/watch?v=Hw6WtWJwRtU
+
+2. Bookmarks Tutorial (Was the series I was watching when I first started this project) - https://www.youtube.com/playlist?list=PLmUfPdy-g24Fx7Iiz3OAu_Ylh5SMeIgN-
