@@ -13,22 +13,22 @@
 
 
 User.create(
-	name: "Patrick Hulligan",
+	name: "PatrickHulligan",
 	password: "hello" )
 
 User.create(
-	name: "Erin Hulligan",
+	name: "ErinHulligan",
 	password: "world" )
 
 Post.create(
 	url: "https://aos.iacpublishinglabs.com/question/ed3d656e3a8c9b5fe63845922ed5d64d/aq/700px-394px/can-corgi-puppies_f3dd708afd5cb9c9_9t7k5pAYTCGhM0AWBjDP4A.jpg?domain=cx.aos.ask.com", 
-	owner_id: 0,
+	user_id: 1,
 	caption: "I LOVE CORGIS! We are going to get a puppy someday!" )
 
 Following.create(
-	follower_id: 0,
-	leader_id: 1 )
+	user_id: 1,
+	leader_id: 2 )
 
 Like.create(
-	user_id: 1,
-	post_id: 0 )
+	user_id: 2,
+	post_id: 1 )

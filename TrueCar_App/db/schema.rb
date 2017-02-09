@@ -13,10 +13,11 @@
 ActiveRecord::Schema.define(version: 20170207074759) do
 
   create_table "Followings", force: :cascade do |t|
-    t.integer  "follower_id", null: false
-    t.integer  "leader_id",   null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "user_id",    null: false
+    t.integer  "leader_id",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_Followings_on_user_id"
   end
 
   create_table "Likes", force: :cascade do |t|
@@ -24,14 +25,16 @@ ActiveRecord::Schema.define(version: 20170207074759) do
     t.integer  "post_id",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_Likes_on_user_id"
   end
 
   create_table "Posts", force: :cascade do |t|
+    t.integer  "user_id",    null: false
     t.string   "url",        null: false
-    t.integer  "owner_id",   null: false
     t.string   "caption",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_Posts_on_user_id"
   end
 
   create_table "Users", force: :cascade do |t|
