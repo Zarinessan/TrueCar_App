@@ -1,0 +1,11 @@
+<h1>Users#index</h1>
+
+
+<%= link_to "New User", new_user_path %>
+
+<p>Here are the users we found!</p>
+
+<% @users.each do |user| %>
+	<p> ID: <%= user.id %> Name: "<%= user.name %>" Password: "<%= user.password %>" </p>
+	<hr>
+<% end %>

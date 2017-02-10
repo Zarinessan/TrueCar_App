@@ -5,8 +5,8 @@
 <p>Here are the posts we found!</p>
 
 <% @posts.each do |post| %>
-	<h2> <% post.user_id %></h2>
-	<p> <%= post.url %> </p>
+	<p><%= link_to 'Follow ' + post.user.name, user_path(post.user) %></p>
+	<p> <%= image_tag post.url %> </p>
 	<p> <%= post.caption %> </p>
 	<hr>
 <% end %>
