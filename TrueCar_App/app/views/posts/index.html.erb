@@ -1,10 +1,26 @@
 <h1>Posts#index</h1>
 
+<div>
+  <% if current_user %>
+    Logged in as <%= current_user.name %>.
+    <%= link_to "Log out", log_out_path %>
+  <% else %>
+    <%= link_to "Sign up", sign_up_path %> or
+    <%= link_to "log in", log_in_path %>
+  <% end %>
+</div>
+
+<br> </br>
 <%= link_to "New Post", new_post_path %>
+
+<% flash.each do |name, msg| %>
+	<%=content_tag :div, msg, id: "flash_#{name}" %>
+<% end %>
 
 <p>Here are the posts we found!</p>
 
 <% @posts.each do |post| %>
+	binding.pry
 	<p><%= link_to 'Follow ' + post.user.name, user_path(post.user) %></p>
 	<p> <%= image_tag post.url %> </p>
 	<p> <%= post.caption %> </p>

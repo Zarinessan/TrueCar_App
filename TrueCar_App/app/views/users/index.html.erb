@@ -6,6 +6,6 @@
 <p>Here are the users we found!</p>
 
 <% @users.each do |user| %>
-	<p> ID: <%= user.id %> Name: "<%= user.name %>" Password: "<%= user.password %>" </p>
+	<p> ID: <%= user.id %> Name: "<%= user.name %>" Password: "<%= user.password_digest %>" </p>
 	<hr>
 <% end %>
